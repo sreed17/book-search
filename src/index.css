@@ -5,10 +5,21 @@
 @layer base {
   html {
     color-scheme: light dark;
+    font-size: 14pt;
+  }
+
+  body {
+    width: 100%;
+    min-height: 100svh;
+    min-height: 100dvh;
   }
 
   .dark {
     color-scheme: dark;
+  }
+
+  #root {
+    @apply flex flex-col items-stretch justify-start w-full;
   }
 }
 
